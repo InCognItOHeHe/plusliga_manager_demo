@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Volley Manager Polska - Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="mark">VM</div>
+        <div>
+          <h1>Volley Manager</h1>
+          <p>Polska demo</p>
+        </div>
+      </div>
+
+      <div id="career-card" class="career-card"></div>
+
+      <nav class="nav" id="nav">
+        <button data-view="dashboard" class="active">Centrum</button>
+        <button data-view="squad">Skład</button>
+        <button data-view="lineup">Ustawienie</button>
+        <button data-view="league">Liga</button>
+        <button data-view="match">Mecz tekstowy</button>
+        <button data-view="database">Baza</button>
+      </nav>
+
+      <div class="side-card">
+        <strong>Zakres demo</strong>
+        <span>Kariera jednym klubem, realne ligi i nazwiska, terminarz sezonu oraz tekstowy silnik meczu.</span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow" id="season-label">Sezon 2025/26</div>
+          <h2 id="view-title">Centrum klubu</h2>
+        </div>
+        <div class="actions">
+          <button id="simulate-day" class="btn primary">Symuluj kolejkę</button>
+          <button id="reset-save" class="btn ghost">Reset kariery</button>
+        </div>
+      </header>
+
+      <section id="view"></section>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
